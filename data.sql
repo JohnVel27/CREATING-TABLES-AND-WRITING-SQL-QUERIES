@@ -1104,199 +1104,206 @@ INSERT INTO Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) VALUES
 
 -- Groups:
 
+-- Academic Grade Groups
 INSERT INTO Groups (Groupname, CreatedBy) VALUES
-('Naruto Fans', 1),
-('Sasuke Squad', 2),
-('Sakura Supporters', 3),
-('Kakashi Followers', 4),
-('Jiraiya Enthusiasts', 6),
-('Itachi Admirers', 8),
-('Kisame Clan', 9),
-('Guy Team', 10),
-('Boruto League', 11),
-('Sarada Circle', 12),
-('Shikamaru Crew', 13),
-('Midorima Shintaro Club', 41),
-('Taiga Kagami Team', 42),
-('Akashi Seijuro Community', 43),
-('Aomine Daiki Circle', 44),
-('Murasakibara Atsushi Forum', 45),
-('Kuroko Tetsuya Guild', 46);
+('Freshman Year Study Group', 1),
+('Sophomore Year Discussions', 2),
+('Junior Year Projects', 3),
+('Senior Year Seminars', 4),
+('Graduate Students Network', 6),
+('PhD Candidates Forum', 8),
+('Undergraduate Research Club', 9),
+('Honors Society', 10),
+('Student Government Association', 11),
+('Academic Achievement Circle', 12),
+('Scholarship Recipients Group', 13),
+('Dean’s List Members', 41),
+('Campus Leaders Network', 42),
+('International Students Club', 43),
+('Exchange Students Forum', 44),
+('Academic Support Group', 45),
+('Student Mentoring Program', 46);
 
 
--- Posts:
 
--- Naruto Fans (GroupId = 1)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss your favorite Naruto character and their development.', 21, 0, 1, 1, 1),
-('Share your favorite Naruto episodes and why they stand out.', 25, 1, 0, 1, 1),
-('Let’s organize a Naruto marathon or event!', 33, 1, 0, 1, 1),
-('I’m new here, any Naruto recommendations?', 60, 0, 1, 1, 1),
-('Seeking advice on Naruto’s best training arcs.', 66, 0, 0, 1, 1),
-('Need tips on Naruto cosplay ideas.', 81, 0, 0, 1, 1),
-('Thoughts on Naruto’s impact on modern anime.', 32, 0, 1, 1, 1),
-('I’m new here, any Naruto discussions to join?', 76, 1, 0, 1, 1),
-('Seeking advice on Naruto’s lore and characters.', 87, 0, 1, 1, 1);
+('Discuss your experiences with different grading systems in universities.', 21, 0, 1, 1, 1),
+('Share your thoughts on the impact of grading scales on student performance.', 25, 1, 0, 1, 1),
+('Let’s organize a discussion or event about grading systems in education!', 33, 1, 0, 1, 1),
+('I’m new here, any recommendations on resources about grading systems?', 60, 0, 1, 1, 1),
+('Seeking advice on the pros and cons of various grading systems.', 66, 0, 0, 1, 1),
+('Need tips on understanding complex grading systems.', 81, 0, 0, 1, 1),
+('Thoughts on how grading systems affect academic motivation.', 32, 0, 1, 1, 1),
+('I’m new here, any ongoing discussions about grading systems?', 76, 1, 0, 1, 1),
+('Seeking advice on the most effective grading practices in universities.', 87, 0, 1, 1, 1);
 
--- Sasuke Squad (GroupId = 2)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Share your favorite Sasuke moments and why they’re significant.', 35, 0, 1, 0, 2),
-('Looking forward to connecting with fellow Sasuke fans!', 65, 1, 0, 0, 2),
-('Ideas for Sasuke-themed group activities or discussions.', 77, 1, 0, 0, 2),
-('I’m new here, what are the hot topics about Sasuke?', 85, 0, 1, 0, 2),
-('Discuss Sasuke’s evolution throughout the series.', 95, 0, 0, 0, 2),
-('Recommendations for Sasuke-related fan content.', 67, 0, 0, 0, 2);
 
--- Sakura Supporters (GroupId = 3)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Let’s discuss Sakura’s growth as a ninja and character.', 48, 1, 0, 0, 3),
-('Anyone have insights on Sakura’s pivotal moments in the series?', 77, 1, 0, 0, 3);
+('Share your experiences with different grading scales and their impacts.', 35, 0, 1, 0, 2),
+('Looking forward to connecting with others about grading system discussions!', 65, 1, 0, 0, 2),
+('Ideas for discussions or activities about grading systems in education.', 77, 1, 0, 0, 2),
+('I’m new here, what are the current hot topics about grading systems?', 85, 0, 1, 0, 2),
+('Discuss the evolution of grading systems throughout your academic career.', 95, 0, 0, 0, 2),
+('Recommendations for resources on understanding grading systems.', 67, 0, 0, 0, 2);
 
--- Kakashi Followers (GroupId = 4)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Share your favorite Kakashi techniques and why they’re effective.', 53, 0, 0, 0, 4),
-('Discuss Kakashi’s impact on his students and team dynamics.', 55, 0, 0, 0, 4),
-('Check out this analysis on Kakashi’s battle strategies.', 62, 0, 0, 0, 4),
-('Looking forward to Kakashi-themed events or discussions!', 75, 1, 0, 0, 4),
-('Say hello and share what you love about Kakashi!', 90, 0, 1, 0, 4),
-('Discuss Kakashi’s role in the larger story arc.', 96, 0, 0, 0, 4),
-('Thoughts on Kakashi’s leadership and mentorship style.', 20, 0, 1, 0, 4),
-('Discuss Kakashi’s role in the Fourth Great Ninja War.', 4, 1, 0, 0, 4),
-('What are your thoughts on Kakashi’s leadership skills?', 4, 0, 1, 0, 4),
-('Share your theories on how Kakashi obtained his Mangekyo Sharingan.', 4, 1, 0, 0, 4),
-('Does Kakashi’s calm demeanor make him a better mentor? Explain your view.', 4, 0, 1, 0, 4),
-('How would you rate Kakashi’s tactical intelligence in battles?', 4, 1, 0, 0, 4);
 
--- Jiraiya Enthusiasts (GroupId = 5)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Jiraiya’s mentorship and his influence on Naruto.', 17, 1, 0, 0, 5),
-('Share your favorite Jiraiya quotes and their impact.', 58, 0, 0, 0, 5),
-('Need help with Jiraiya-themed content or fan projects.', 59, 0, 0, 0, 5),
-('Looking forward to discussing Jiraiya’s epic moments!', 67, 0, 0, 0, 5),
-('Ideas for Jiraiya fan events or activities.', 88, 1, 0, 0, 5),
-('I’m new here, what’s the latest on Jiraiya discussions?', 7, 0, 1, 0, 5),
-('Recommendations for Jiraiya-related content or discussions.', 20, 1, 0, 0, 5);
+('Let’s discuss the pros and cons of different grading systems.', 48, 1, 0, 0, 3),
+('Anyone have insights on how grading systems affect student success?', 77, 1, 0, 0, 3);
 
--- Itachi Admirers (GroupId = 6)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Itachi’s most memorable moments and their impact.', 7, 0, 0, 0, 6),
-('Seeking help with Itachi-related fan theories and discussions.', 34, 0, 1, 0, 6),
-('Share your thoughts on Itachi’s role in the Uchiha clan.', 47, 1, 0, 0, 6),
-('Excited to connect with other Itachi fans!', 69, 1, 0, 0, 6),
-('Looking for recommendations on Itachi fan content.', 83, 1, 0, 0, 6),
-('Discuss Itachi’s strategies and their effectiveness.', 18, 0, 1, 0, 6),
-('Looking forward to Itachi-themed discussions!', 24, 0, 0, 0, 6),
-('Share interesting Itachi-related facts and insights.', 58, 1, 0, 0, 6),
-('I’m new here, any ongoing Itachi discussions?', 80, 1, 0, 0, 6),
-('Looking forward to diving into Itachi’s character and story!', 87, 1, 0, 0, 6);
 
--- Kisame Clan (GroupId = 7)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Share your favorite Kisame battles and what makes them stand out.', 14, 1, 0, 0, 7),
-('Looking for recommendations on Kisame fan content.', 23, 1, 0, 0, 7),
-('Here’s an interesting fact about Kisame’s abilities.', 56, 0, 1, 0, 7),
-('Let’s organize a Kisame-themed discussion or event!', 57, 0, 1, 0, 7),
-('Interesting facts about Kisame’s impact in the series.', 64, 0, 0, 0, 7),
-('Kisame’s role in his team dynamics and battles.', 71, 0, 0, 0, 7),
-('Let’s make this Kisame group more active with fun events!', 74, 1, 0, 0, 7),
-('Ideas for Kisame-themed activities or discussions.', 76, 1, 0, 0, 7),
-('I’m new here, looking for Kisame discussions!', 91, 0, 0, 0, 7),
-('Let’s make this Kisame group active with new content!', 90, 1, 0, 0, 7),
-('Happy to be part of the Kisame fan community!', 92, 0, 0, 0, 7);
+('Share your experiences with various grading systems and their effectiveness.', 53, 0, 0, 0, 4),
+('Discuss the impact of grading systems on student motivation and learning.', 55, 0, 0, 0, 4),
+('Check out this analysis on the advantages and disadvantages of different grading systems.', 62, 0, 0, 0, 4),
+('Looking forward to discussions or events about grading systems in education!', 75, 1, 0, 0, 4),
+('Say hello and share what you think about different grading practices!', 90, 0, 1, 0, 4),
+('Discuss the role of grading systems in academic success.', 96, 0, 0, 0, 4),
+('Thoughts on the impact of grading systems on student mental health.', 20, 0, 1, 0, 4),
+('Discuss the influence of grading systems on educational equity.', 4, 1, 0, 0, 4), 
+('What are your thoughts on pass/fail grading systems?', 4, 0, 1, 0, 4), 
+('Share your theories on how grading systems could be improved.', 4, 1, 0, 0, 4), 
+('Does the grading system impact the quality of education? Explain your view.', 4, 0, 1, 0, 4), 
+('How would you rate the effectiveness of different grading scales?', 4, 1, 0, 0, 4);
 
--- Guy Team (GroupId = 8)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Guy’s best techniques and why they’re effective.', 5, 0, 1, 0, 8),
-('Share interesting facts about Guy’s training methods.', 27, 0, 0, 0, 8),
-('Say hello and share what you love about Guy!', 29, 1, 0, 0, 8),
-('Interesting facts about Guy’s impact in the series.', 63, 0, 0, 0, 8),
-('Recommendations for Guy-themed fan content.', 30, 0, 1, 0, 8),
-('Discuss Guy’s role in the series and his influence on others.', 36, 1, 0, 0, 8),
-('Looking forward to Guy-themed events and discussions!', 45, 1, 0, 0, 8),
-('Excited to dive into Guy’s character and story!', 71, 1, 0, 0, 8),
-('I’m new here, any ongoing Guy discussions?', 56, 0, 1, 0, 8),
-('Thoughts on Guy’s greatest achievements and battles.', 95, 1, 0, 0, 8);
 
--- Boruto League (GroupId = 9)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Boruto’s character development and story arcs.', 12, 1, 0, 0, 9),
-('Share your thoughts on the new generation of ninjas in Boruto.', 25, 0, 0, 0, 9),
-('Let’s talk about Boruto’s impact on the Naruto universe.', 34, 1, 0, 0, 9),
-('Looking forward to Boruto-themed discussions and activities!', 56, 0, 1, 0, 9),
-('Share your favorite Boruto moments and why they stand out.', 74, 1, 0, 0, 9),
-('Excited to discuss Boruto’s team dynamics and new challenges.', 81, 0, 0, 0, 9),
-('I’m new here, what are the key topics in Boruto discussions?', 85, 1, 0, 0, 9),
-('Thoughts on the new generation of shinobi in Boruto.', 91, 0, 1, 0, 9);
+('Discuss the benefits and drawbacks of different grading systems.', 17, 1, 0, 0, 5),
+('Share your favorite strategies for understanding complex grading systems.', 58, 0, 0, 0, 5),
+('Need help with interpreting various grading scales and their implications.', 59, 0, 0, 0, 5),
+('Looking forward to discussing innovative grading systems and practices!', 67, 0, 0, 0, 5),
+('Ideas for workshops on improving understanding of grading systems.', 88, 1, 0, 0, 5),
+('I’m new here, what’s the latest discussion on grading systems?', 7, 0, 1, 0, 5),
+('Recommendations for books or articles on grading systems and fairness.', 20, 1, 0, 0, 5);
 
--- Sarada Circle (GroupId = 10)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Sarada’s character development and role in Boruto.', 4, 1, 0, 0, 10),
-('Share your favorite moments of Sarada and her growth.', 21, 0, 0, 0, 10),
-('Excited to connect with fellow Sarada fans!', 23, 1, 0, 0, 10),
-('Looking forward to Sarada-themed discussions and activities!', 29, 0, 1, 0, 10),
-('Thoughts on Sarada’s role in the new generation of shinobi.', 47, 1, 0, 0, 10),
-('I’m new here, any ongoing Sarada discussions?', 67, 0, 1, 0, 10);
 
--- Shikamaru Crew (GroupId = 11)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Share your favorite Shikamaru strategies and tactics.', 15, 0, 0, 0, 11),
-('Discuss Shikamaru’s role in the series and his impact.', 31, 1, 0, 0, 11),
-('Looking forward to Shikamaru-themed discussions!', 51, 1, 0, 0, 11),
-('Ideas for Shikamaru-themed fan content and projects.', 81, 0, 0, 0, 11),
-('I’m new here, any ongoing Shikamaru discussions?', 85, 0, 1, 0, 11),
-('Thoughts on Shikamaru’s leadership and decision-making skills.', 77, 1, 0, 0, 11);
+('Discuss the effectiveness of grading systems and their impact on students.', 7, 0, 0, 0, 6),
+('Seeking help with understanding grading disparities across different institutions.', 34, 0, 1, 0, 6),
+('Share your thoughts on the future of grading systems in higher education.', 47, 1, 0, 0, 6),
+('Excited to connect with others interested in grading system reform!', 69, 1, 0, 0, 6),
+('Looking for recommendations on improving grading practices.', 83, 1, 0, 0, 6),
+('Discuss strategies for managing stress related to grading.', 18, 0, 1, 0, 6),
+('Looking forward to discussions on grading policies and their effects!', 24, 0, 0, 0, 6),
+('Share interesting insights on how grading systems can be improved.', 58, 1, 0, 0, 6),
+('I’m new here, any ongoing conversations about grading system innovations?', 80, 1, 0, 0, 6),
+('Looking forward to exploring new ideas about grading systems!', 87, 1, 0, 0, 6);
 
--- Midorima Shintaro Club (GroupId = 12)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Midorima’s basketball techniques and their effectiveness.', 23, 0, 0, 0, 12),
-('Share your favorite moments of Midorima in action.', 29, 1, 0, 0, 12),
-('Looking forward to Midorima-themed discussions and activities!', 31, 1, 0, 0, 12),
-('Here’s an interesting fact about Midorima’s skills.', 35, 0, 0, 0, 12),
-('I’m new here, any ongoing Midorima discussions?', 55, 0, 1, 0, 12);
 
--- Taiga Kagami Team (GroupId = 13)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Share your favorite Taiga Kagami highlights and matches.', 20, 1, 0, 0, 13),
-('Discuss Kagami’s role in his team’s success and strategies.', 23, 1, 0, 0, 13),
-('Looking forward to Kagami-themed discussions and events!', 26, 0, 1, 0, 13),
-('Share your favorite Taiga Kagami moments and why they’re impactful.', 34, 1, 0, 0, 13),
-('I’m new here, what are the key topics about Kagami?', 56, 0, 0, 0, 13),
-('Thoughts on Kagami’s development as a player.', 67, 1, 0, 0, 13);
+('Share your thoughts on the effectiveness of various grading rubrics.', 14, 1, 0, 0, 7),
+('Looking for recommendations on research about grading fairness and effectiveness.', 23, 1, 0, 0, 7),
+('Here’s an interesting study on the impact of grading systems on student motivation.', 56, 0, 1, 0, 7),
+('Let’s organize a discussion on grading biases and their impact on students.', 57, 0, 1, 0, 7),
+('Interesting facts about the history and evolution of grading systems.', 64, 0, 0, 0, 7),
+('Discuss the role of grading systems in achieving academic equity.', 71, 0, 0, 0, 7),
+('Let’s make this group more active with discussions on grading systems!', 74, 1, 0, 0, 7),
+('Ideas for events or activities related to understanding grading systems.', 76, 1, 0, 0, 7),
+('I’m new here, looking for discussions about grading systems and practices!', 91, 0, 0, 0, 7),
+('Let’s make this group active with new content on grading systems!', 90, 1, 0, 0, 7),
+('Happy to be part of the community discussing grading systems!', 92, 0, 0, 0, 7);
 
--- Akashi Seijuro Community (GroupId = 14)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Akashi’s leadership and playing style.', 7, 0, 0, 0, 14),
-('Share your favorite Akashi moments and why they’re significant.', 34, 1, 0, 0, 14),
-('Looking forward to Akashi-themed discussions and activities!', 58, 0, 1, 0, 14),
-('Here’s an interesting fact about Akashi’s game strategies.', 68, 0, 0, 0, 14),
-('Thoughts on Akashi’s impact on his team’s performance.', 72, 1, 0, 0, 14),
-('I’m new here, any ongoing Akashi discussions?', 90, 0, 1, 0, 14);
 
--- Aomine Daiki Circle (GroupId = 15)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Aomine’s basketball techniques and their effectiveness.', 2, 1, 0, 0, 15),
-('Share your favorite moments of Aomine’s gameplay.', 12, 0, 1, 0, 15),
-('Looking forward to Aomine-themed discussions and events!', 30, 0, 0, 0, 15),
-('Thoughts on Aomine’s role in the series and his impact.', 55, 1, 0, 0, 15),
-('I’m new here, what are the key topics about Aomine?', 78, 0, 1, 0, 15),
-('Share interesting facts about Aomine’s character development.', 80, 1, 0, 0, 15);
+('Discuss best practices for fair and transparent grading systems.', 5, 0, 1, 0, 8),
+('Share interesting insights about alternative grading methods and their effectiveness.', 27, 0, 0, 0, 8),
+('Say hello and share your thoughts on grading systems in education!', 29, 1, 0, 0, 8),
+('Interesting facts about grading systems in different educational systems.', 63, 0, 0, 0, 8),
+('How do you perceive the impact of grading systems on educational outcomes?', 72, 1, 0, 0, 8),
+('Discuss recent changes and innovations in grading systems.', 40, 1, 0, 0, 8),
+('Looking forward to sharing insights and discussing grading systems with the group!', 68, 1, 0, 0, 8),
+('What are the key factors in developing effective grading systems?', 96, 1, 0, 0, 8);
 
--- Murasakibara Atsushi Forum (GroupId = 16)
-INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Murasakibara’s basketball skills and techniques.', 9, 1, 0, 0, 16),
-('Share your favorite moments of Murasakibara in action.', 21, 0, 0, 0, 16),
-('Looking forward to Murasakibara-themed discussions and activities!', 37, 1, 0, 0, 16),
-('Thoughts on Murasakibara’s impact on his team and the series.', 45, 0, 1, 0, 16),
-('I’m new here, any ongoing Murasakibara discussions?', 60, 0, 0, 0, 16);
 
--- Kuroko Tetsuya Guild (GroupId = 17)
 INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
-('Discuss Kuroko’s unique play style and its impact on games.', 7, 1, 0, 0, 17),
-('Share your favorite moments of Kuroko’s gameplay.', 12, 0, 1, 0, 17),
-('Looking forward to Kuroko-themed discussions and events!', 21, 0, 0, 0, 17),
-('Thoughts on Kuroko’s role in his team’s success and strategies.', 33, 1, 0, 0, 17),
-('I’m new here, any ongoing Kuroko discussions?', 50, 0, 1, 0, 17),
-('Ideas for Kuroko-themed activities or fan content.', 65, 1, 0, 0, 17);
+('Share your thoughts on grading systems and their impact on academic performance.', 4, 1, 0, 0, 9),
+('Discuss the advantages and disadvantages of different grading scales.', 14, 1, 0, 0, 9),
+('I’m new here, looking forward to discussions on grading systems!', 22, 1, 0, 0, 9),
+('Here’s an article on how grading systems impact student outcomes.', 28, 0, 0, 0, 9),
+('Thoughts on how to improve grading systems for better student feedback.', 34, 0, 1, 0, 9),
+('Ideas for improving transparency in grading systems.', 49, 0, 1, 0, 9),
+('Discuss grading system reforms and their potential impact on education.', 52, 0, 0, 0, 9);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Discuss the effectiveness of different grading systems and their implications.', 7, 1, 0, 0, 10),
+('Share your opinions on innovative grading practices and their impact on learning.', 17, 0, 1, 0, 10),
+('How can grading systems be designed to better serve diverse student needs?', 23, 1, 0, 0, 10),
+('Looking forward to discussions about grading systems and their role in education.', 29, 1, 0, 0, 10),
+('Share insights on grading system trends and future directions.', 36, 1, 0, 0, 10),
+('I’m new here, excited to discuss grading systems with everyone!', 52, 0, 1, 0, 10),
+('Thoughts on grading system adjustments to enhance academic fairness.', 63, 1, 0, 0, 10),
+('Here’s a resource on grading systems that might interest you.', 75, 0, 1, 0, 10),
+('Let’s have a conversation about grading practices and their impact on education.', 82, 0, 0, 0, 10),
+('What are your thoughts on grading innovations and their benefits?', 96, 1, 0, 0, 10);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Let’s discuss strategies for academic success!', 26, 0, 1, 0, 11),
+('Discuss the impact of effective study techniques on grades.', 72, 0, 0, 0, 11),
+('Share your best practices for improving academic performance.', 84, 0, 0, 0, 11),
+('Looking for advice on balancing studies and personal life.', 89, 1, 0, 0, 11),
+('Discuss methods for achieving academic excellence.', 24, 1, 0, 0, 11),
+('Share interesting facts about academic achievement.', 60, 0, 1, 0, 11);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Discuss strategies for maintaining high grades.', 15, 1, 0, 0, 12),
+('Share interesting facts about effective study habits.', 37, 0, 1, 0, 12),
+('Looking forward to discussions on academic success!', 50, 0, 0, 0, 12),
+('Discuss the impact of grading systems on student motivation.', 54, 0, 1, 0, 12),
+('Recommendations for improving academic performance.', 79, 0, 1, 0, 12),
+('I’m new here, what are the latest discussions on academic success?', 27, 1, 0, 0, 12),
+('Discuss the role of grades in academic and career success.', 51, 0, 0, 0, 12),
+('Seeking advice on handling academic challenges.', 55, 0, 1, 0, 12);
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Share your strategies for excelling in university courses.', 18, 0, 0, 0, 13),
+('Let’s make this group active with discussions on academic success!', 19, 1, 0, 0, 13),
+('Say hello and share your best study techniques!', 51, 0, 1, 0, 13),
+('Discuss the challenges and rewards of university life.', 82, 0, 0, 0, 13),
+('Say hello and introduce yourself if you’re new to university!', 22, 0, 1, 0, 13),
+('Share interesting facts about achieving academic goals.', 67, 1, 0, 0, 13),
+('Looking forward to discussions on improving grades!', 71, 0, 0, 0, 13),
+('Say hello and share your academic success stories!', 86, 1, 0, 0, 13);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Discuss effective leadership and its impact on academic teams.', 28, 0, 1, 0, 14),
+('Share your experiences with leading study groups and their outcomes.', 48, 0, 1, 0, 14),
+('Looking forward to discussing strategies for academic leadership!', 78, 1, 0, 0, 14),
+('Share interesting facts about effective academic leadership.', 86, 1, 0, 0, 14),
+('Discuss the influence of strong leadership on academic performance.', 90, 0, 1, 0, 14);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Share your best practices for university success and standout moments.', 32, 1, 0, 0, 15),
+('Seeking help with academic projects and study techniques.', 68, 0, 1, 0, 15),
+('Discuss the impact of academic challenges on student growth.', 87, 0, 1, 0, 15),
+('I’m new here, looking for advice on improving academic performance!', 35, 1, 0, 0, 15),
+('Looking forward to connecting with other students focused on success!', 47, 0, 0, 0, 15);
+
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Discuss the impact of different grading systems on student outcomes.', 40, 0, 0, 0, 16),
+('Share interesting facts about effective study strategies.', 80, 1, 0, 0, 16),
+('Looking for recommendations on academic success strategies.', 86, 1, 0, 0, 16),
+('Share your experiences with different grading methods and their impact.', 15, 1, 0, 0, 16),
+('Interesting facts about academic success and grading challenges.', 50, 1, 0, 0, 16),
+('Recommendations for improving academic performance and handling grades.', 53, 0, 0, 0, 16),
+('Discuss the role of grading systems in academic motivation.', 57, 0, 0, 0, 16);
+
+INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForGroup, IsOnlyForFriends, GroupId) VALUES
+('Discuss effective study techniques and their impact on academic success.', 16, 0, 1, 0, 17),
+('Let’s make this group active with university success strategies!', 24, 1, 0, 0, 17),
+('Share your best study methods and their effectiveness.', 31, 0, 1, 0, 17),
+('Share interesting facts about achieving academic excellence.', 61, 1, 0, 0, 17),
+('Discuss academic development and strategies for success.', 94, 1, 0, 0, 17),
+('Say hello and share your experiences with academic challenges!', 5, 0, 0, 0, 17),
+('Looking for advice on university success and grading systems.', 19, 1, 0, 0, 17),
+('Share interesting facts about academic performance and strategies.', 70, 1, 0, 0, 17);
+
+
 
 
 -- GroupmembershipRequest to insert in table:
